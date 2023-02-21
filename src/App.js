@@ -5,6 +5,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Aboutus from "./Components/About";
 import Contact from "./Components/Contact";
 import Cart from "./Components/Cart";
+import Body from "./Components/Body";
 
 const Applayout=()=>{
 return(
@@ -15,13 +16,7 @@ return(
  </>
 )
 }
-const Body=()=>{
-return(
-  <>
-  <h1>This is body element</h1>
-  </>
-)
-}
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
