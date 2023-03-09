@@ -6,14 +6,16 @@ import Aboutus from "./Components/About";
 import Contact from "./Components/Contact";
 import Cart from "./Components/Cart";
 import Body from "./Components/Body";
+import { Provider } from "react-redux";
+import store from './ReduxStore/store'
 
 const Applayout=()=>{
 return(
-  <>
+  <Provider store={store}>
   <Navbar/>
   <Outlet/>
   <Footer/>
- </>
+ </Provider>
 )
 }
 
